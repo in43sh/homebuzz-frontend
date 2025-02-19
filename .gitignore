@@ -1,0 +1,61 @@
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependency directories
+node_modules/
+.pnp/
+.pnp.js
+
+# Cache
+.npm/
+.yarn/
+.pnp.cjs
+.pnp.loader.mjs
+.yarn-cache/
+
+# Build output
+dist/
+out/
+.vite/
+.next/
+.vercel/
+.netlify/
+
+# Testing
+coverage/
+jest/
+*.lcov
+
+# TypeScript
+*.tsbuildinfo
+*.rpt2_cache/
+
+# Optional eslint cache
+.eslintcache
+
+# dotenv environment variables file
+.env*
+!.env.example
+
+# Other
+.DS_Store
+Thumbs.db
+
+# VSCode settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Storybook
+.storybook/
+*.stories.*
