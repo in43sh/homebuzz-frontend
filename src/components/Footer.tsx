@@ -13,7 +13,10 @@ const Footer = () => {
             <p>(800) 123-45-67</p>
             <p>(800) 123-45-68</p>
             <p>
-              <a href="mailto:mail@mail.com" className="hover:text-[#f3c614]">
+              <a
+                href="mailto:mail@mail.com"
+                className="hover:text-primary-hover"
+              >
                 mail@mail.com
               </a>
             </p>
@@ -24,13 +27,13 @@ const Footer = () => {
             <h3 className="text-lg font-semibold">Follow us</h3>
             <p className="mb-3 text-gray-300">Let's get connected!</p>
             <div className="flex justify-center space-x-4 md:justify-start">
-              <a href="#" className="hover:text-[#f3c614]">
+              <a href="#" className="hover:text-primary-hover">
                 <FaFacebookF className="h-5 w-5" />
               </a>
-              <a href="#" className="hover:text-[#f3c614]">
+              <a href="#" className="hover:text-primary-hover">
                 <FaTwitter className="h-5 w-5" />
               </a>
-              <a href="#" className="hover:text-[#f3c614]">
+              <a href="#" className="hover:text-primary-hover">
                 <FaInstagram className="h-5 w-5" />
               </a>
             </div>
@@ -50,7 +53,7 @@ const Footer = () => {
                 placeholder="Your email"
                 className="w-full rounded-l-md border border-white bg-transparent p-2 text-white focus:ring-2 focus:ring-white focus:outline-none"
               />
-              <button className="bg-primary rounded-r-md px-4 py-2 text-black hover:bg-[#f3c614]">
+              <button className="bg-primary hover:bg-primary-hover rounded-r-md px-4 py-2 text-black">
                 Subscribe
               </button>
             </div>
@@ -60,11 +63,11 @@ const Footer = () => {
         {/* Bottom of Footer */}
         <div className="mt-8 flex flex-col items-center justify-between border-t border-gray-500 pt-4 text-sm text-gray-300 md:flex-row">
           <p className="mb-2 md:mb-0">
-            <a href="/policy" className="hover:text-[#f3c614]">
+            <a href="/policy" className="hover:text-primary-hover">
               Policy statement
             </a>{' '}
             |
-            <a href="/cookies" className="hover:text-[#f3c614]">
+            <a href="/cookies" className="hover:text-primary-hover">
               {' '}
               Cookie usage
             </a>

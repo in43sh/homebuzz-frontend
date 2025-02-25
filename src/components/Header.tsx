@@ -32,13 +32,13 @@ const Header = () => {
           </a>
         </nav>
 
-        {/* Cart and Login - Right Side */}
+        {/* Cart and Sign in - Right Side */}
         <div className="hidden items-center space-x-6 md:flex">
           <a href="/cart" className="hover:text-gray-300">
             <ShoppingCartIcon className="h-6 w-6" />
           </a>
-          <a href="/login" className="hover:text-gray-300">
-            Login
+          <a href="/signin" className="hover:text-gray-300">
+            Sign in
           </a>
         </div>
 
@@ -73,13 +73,13 @@ const Header = () => {
           </a>
           <a
             href="/cart"
-            className="block flex items-center space-x-2 hover:text-gray-300"
+            className="flex items-center space-x-2 hover:text-gray-300"
           >
             <ShoppingCartIcon className="h-6 w-6" />
             <span>Cart</span>
           </a>
-          <a href="/login" className="block hover:text-gray-300">
-            Login
+          <a href="/signin" className="block hover:text-gray-300">
+            Sign In
           </a>
         </nav>
       )}
