@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid';
 
-const Login = () => {
+const SignIn = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.state?.from || '/';
@@ -55,7 +55,7 @@ const Login = () => {
     <div className="flex min-h-screen items-center justify-center bg-gray-100 px-4">
       <div className="w-full max-w-md rounded-lg bg-white p-8 shadow-lg">
         <h2 className="mb-6 text-center text-2xl font-bold text-gray-900">
-          Sign In
+          Sign in
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -128,7 +128,7 @@ const Login = () => {
           </div>
           <button
             type="submit"
-            className="bg-primary w-full rounded-lg py-2 font-semibold text-white transition hover:bg-blue-700 disabled:opacity-50"
+            className="bg-primary hover:bg-primary-hover w-full rounded-lg py-2 font-semibold text-white transition disabled:opacity-50"
             disabled={loading}
           >
             {loading ? 'Signing In...' : 'Sign In'}
@@ -148,4 +148,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default SignIn;
