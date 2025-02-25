@@ -1,4 +1,4 @@
-import stoolBg from '../assets/images/banner.png';
+import stoolBg from '../assets/images/stoolBg.png';
 
 const Hero = () => {
   return (
