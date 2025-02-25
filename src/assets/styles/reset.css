@@ -1,89 +1,89 @@
 @layer base {
-    /* Box sizing border-box for all elements */
-    *,
-    *::before,
-    *::after {
-        box-sizing: border-box;
-    }
+  /* Box sizing border-box for all elements */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
 
-    /* Remove default margin and padding */
-    * {
-        margin: 0;
-        padding: 0;
-    }
+  /* Remove default margin and padding */
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
-    /* Ensure full height layout */
-    html,
-    body {
-        height: 100%;
-        width: 100%;
-    }
+  /* Ensure full height layout */
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
 
-    /* Improve text rendering */
-    body {
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-rendering: optimizeSpeed;
-        font-family: theme("fontFamily.sans");
-        /* background-color: theme("colors.background", "white"); */
-        /* color: theme("colors.text", "black"); */
-    }
+  /* Improve text rendering */
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeSpeed;
+    font-family: theme('fontFamily.sans');
+    /* background-color: theme("colors.background", "white"); */
+    /* color: theme("colors.text", "black"); */
+  }
 
-    /* Remove list styles */
-    ul,
-    ol {
-        list-style: none;
-    }
+  /* Remove list styles */
+  ul,
+  ol {
+    list-style: none;
+  }
 
-    /* Remove default link styling */
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
+  /* Remove default link styling */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 
-    /* Remove default button styles */
-    button {
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
+  /* Remove default button styles */
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
 
-    /* Remove outline on inputs and buttons, but keep accessibility */
-    button:focus,
-    input:focus,
-    textarea:focus {
-        /* outline: 2px solid theme("colors.primary", "blue"); */
-        outline-offset: 2px;
-    }
+  /* Remove outline on inputs and buttons, but keep accessibility */
+  button:focus,
+  input:focus,
+  textarea:focus {
+    /* outline: 2px solid theme("colors.primary", "blue"); */
+    outline-offset: 2px;
+  }
 
-    /* Make images responsive */
-    img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
+  /* Make images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 
-    /* Normalize table styles */
-    table {
-        border-collapse: collapse;
-        width: 100%;
-    }
+  /* Normalize table styles */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
 
-    /* Remove built-in form styles */
-    input,
-    textarea,
-    select {
-        font: inherit;
-    }
+  /* Remove built-in form styles */
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
 
-    /* Set default styles for headings */
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        font-weight: theme("fontWeight.bold", "bold");
-        line-height: theme("lineHeight.tight", "1.25");
-    }
+  /* Set default styles for headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: theme('fontWeight.bold', 'bold');
+    line-height: theme('lineHeight.tight', '1.25');
+  }
 }
