@@ -1,11 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import {
-    EyeIcon,
-    EyeSlashIcon,
-    // GlobeAltIcon,
-    // CodeBracketIcon,
-} from "@heroicons/react/24/solid";
+import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/solid";
 
 const Login = () => {
     const navigate = useNavigate();
@@ -64,7 +59,6 @@ const Login = () => {
                 </h2>
 
                 <form onSubmit={handleSubmit} className="space-y-4">
-                    {/* Email Field */}
                     <div>
                         <label className="block text-sm font-medium text-gray-700">
                             Email
@@ -88,8 +82,6 @@ const Login = () => {
                             </p>
                         )}
                     </div>
-
-                    {/* Password Field */}
                     <div className="relative">
                         <label className="block text-sm font-medium text-gray-700">
                             Password
@@ -124,8 +116,6 @@ const Login = () => {
                             </p>
                         )}
                     </div>
-
-                    {/* Remember Me & Forgot Password */}
                     <div className="flex items-center justify-between">
                         <label className="flex items-center space-x-2 text-sm">
                             <input
@@ -139,40 +129,24 @@ const Login = () => {
                         </label>
                         <Link
                             to="/forgot-password"
-                            className="text-sm text-yellow-400 hover:underline"
+                            className="text-sm text-primary hover:underline"
                         >
                             Forgot password?
                         </Link>
                     </div>
-
-                    {/* Submit Button */}
                     <button
                         type="submit"
-                        className="w-full bg-yellow-400 text-white py-2 rounded-lg font-semibold transition hover:bg-blue-700 disabled:opacity-50"
+                        className="w-full bg-primary text-white py-2 rounded-lg font-semibold transition hover:bg-blue-700 disabled:opacity-50"
                         disabled={loading}
                     >
                         {loading ? "Signing In..." : "Sign In"}
                     </button>
                 </form>
-
-                {/* Social Logins */}
-                {/* <div className="mt-6 space-y-3">
-                    <button className="w-full flex items-center justify-center border py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition">
-                        // <GlobeAltIcon className="w-5 h-5 mr-2" />
-                        Sign in with Google
-                    </button>
-                    <button className="w-full flex items-center justify-center border py-2 rounded-lg text-gray-700 hover:bg-gray-100 transition">
-                        <CodeBracketIcon className="w-5 h-5 mr-2" />
-                        Sign in with GitHub
-                    </button>
-                </div> */}
-
-                {/* Signup Link */}
                 <p className="mt-4 text-center text-gray-600">
                     Don't have an account?{" "}
                     <Link
                         to="/signup"
-                        className="text-yellow-400 font-semibold hover:underline"
+                        className="text-primary font-semibold hover:underline"
                     >
                         Sign up here
                     </Link>
