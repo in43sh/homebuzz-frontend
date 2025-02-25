@@ -4,6 +4,7 @@ import {
   XMarkIcon,
   ShoppingCartIcon,
 } from '@heroicons/react/24/outline';
+import logo from '../assets/images/logo.png';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,8 @@ const Header = () => {
       <div className="container mx-auto flex items-center justify-between p-4">
         {/* Logo */}
         <a href="/" className="text-2xl font-bold">
-          Logo
+          {/* Logo */}
+          <img src={logo} alt="Logo" className="inline h-10 max-h-12 w-auto" />
         </a>
 
         {/* Desktop Menu - Centered */}
