@@ -1,14 +1,15 @@
 import NavigationBar from '../components/NavigationBar';
 import Hero from '../components/Hero';
-import Banner from '../components/Banner';
+import TwoMillionItemsBanner from '../components/banners/TwoMillionItemsBanner';
+import CategoriesList from '../components/CategoriesList';
 
 const Home = () => {
   return (
     <>
       <NavigationBar />
       <Hero />
-      <Banner />
-      <p>Home</p>
+      <TwoMillionItemsBanner />
+      <CategoriesList />
     </>
   );
 };
