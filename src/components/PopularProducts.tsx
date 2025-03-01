@@ -24,7 +24,7 @@ const popularProducts: Product[] = [
     unit: '/ piece',
     rating: 4,
     buttonText: 'Add to Cart',
-    buttonStyle: 'bg-yellow-500 hover:bg-yellow-600 text-white',
+    buttonStyle: 'bg-primary hover:bg-primary-dark text-white',
   },
   {
     id: 2,
@@ -44,7 +44,7 @@ const popularProducts: Product[] = [
     unit: '/ gal',
     rating: 4,
     buttonText: 'Add to Cart',
-    buttonStyle: 'bg-yellow-500 hover:bg-yellow-600 text-white',
+    buttonStyle: 'bg-primary hover:bg-primary-dark text-white',
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ const popularProducts: Product[] = [
     unit: '/ gal',
     rating: 4,
     buttonText: 'Add to Cart',
-    buttonStyle: 'bg-yellow-500 hover:bg-yellow-600 text-white',
+    buttonStyle: 'bg-primary hover:bg-primary-dark text-white',
   },
 ];
 
@@ -86,7 +86,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <span className="text-sm text-gray-500">{product.unit}</span>
       </p>
       <button
-        className={`rounded px-4 py-2 font-semibold transition-colors focus:outline-none ${product.buttonStyle}`}
+        className={`w-full rounded px-4 py-2 font-semibold transition-colors focus:outline-none ${product.buttonStyle}`}
         disabled={product.buttonText === 'Added'}
       >
         {product.buttonText}

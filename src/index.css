@@ -3,6 +3,15 @@
 @theme {
   /* --font-display: "Satoshi", "sans-serif"; */
   /* --breakpoint-3xl: 1920px; */
-  --color-primary: #f3c614;
-  --color-primary-hover: #d4a109;
+  /* --color-primary: #f3c614; */
+  --color-primary: #ffce3a;
+  --color-primary-dark: #d4a109;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-black-header: #1b1e1f;
+  --color-gray: #879095;
+  --color-gray-dark: #353b3e;
+  --color-gray-light: #cfd7dc;
+  --color-gray-stroke: #979797;
+  --color-red: #ff0000;
 }
