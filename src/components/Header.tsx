@@ -15,7 +15,7 @@ const Header = () => {
         {/* Logo */}
         <a href="/" className="text-2xl font-bold">
           {/* Logo */}
-          <img src={logo} alt="Logo" className="inline h-10 max-h-12 w-auto" />
+          <img src={logo} alt="Logo" className="inline h-9 max-h-12 w-auto" />
         </a>
 
         {/* Desktop Menu - Centered */}
