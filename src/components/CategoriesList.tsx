@@ -1,24 +1,7 @@
 import { Link } from 'react-router-dom';
+import categories from '../components/constants/categories';
 
 const CategoriesList = () => {
-  const categories = [
-    'Bath & Faucets',
-    'Decor & Furniture',
-    'Paint & building materials',
-    'Doors & Windows',
-    'Electrical',
-    'Flooring',
-    'Hardware',
-    'Heating & Cooling',
-    'Ceiling Fans',
-    'Plumbing',
-    'Lawn & Garden',
-    'Seasonal & Outdoor living',
-    'Kitchenware',
-    'Appliances',
-    'Storage',
-  ];
-
   return (
     <div className="mx-auto my-8 max-w-screen-lg">
       <div className="grid grid-cols-5 gap-4 text-gray-700">
