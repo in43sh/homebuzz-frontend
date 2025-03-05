@@ -1,0 +1,120 @@
+import { useState } from 'react';
+
+const faqData = [
+  {
+    question: 'How do I request installation/measurement services?',
+    answer: `
+      Cauliflower cheese pecorino cheese on toast.
+      Rubber cheese queso danish fontina red leicester
+      macaroni cheese lancashire who moved my cheese cheese on toast.
+      Port-salut bavarian bergkase hard cheese cow hard cheese
+      parmesan swiss lancashire. Manchego emmental cheesy feet.
+    `,
+  },
+  {
+    question: 'How do I make and verify payments?',
+    answer: 'Your detailed explanation about making payments goes here.',
+  },
+  {
+    question: 'Where can I find my bill information?',
+    answer: 'Your detailed explanation about bill information goes here.',
+  },
+  {
+    question: 'How do I check my order status?',
+    answer: 'Your detailed explanation about checking order status goes here.',
+  },
+  {
+    question: 'What is your policy on shipping?',
+    answer: 'Your shipping policy goes here.',
+  },
+  {
+    question: 'What is your policy on refunds?',
+    answer: 'Your refund policy goes here.',
+  },
+  {
+    question: 'What is your policy on donations to charities?',
+    answer: 'Your policy on charitable donations goes here.',
+  },
+];
+
+function Help() {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+  const handleClick = (idx: number) => {
+    setOpenIndex(openIndex === idx ? null : idx);
+  };
+
+  return (
+    <div className="mx-auto max-w-4xl px-4 py-8">
+      <h1 className="mb-6 text-3xl font-bold">Help</h1>
+      {faqData.map((item, idx) => {
+        const isOpen = openIndex === idx;
+        return (
+          <div key={idx} className="mb-4">
+            <button
+              onClick={() => handleClick(idx)}
+              className="flex w-full items-center justify-between bg-gray-200 px-4 py-3 text-left font-medium hover:bg-gray-300"
+            >
+              <span>{item.question}</span>
+              <span
+                className={`transition-transform duration-300 ${isOpen ? 'rotate-90 transform' : ''}`}
+              >
+                ▷
+              </span>
+            </button>
+            {isOpen && (
+              <div className="border border-t-0 border-gray-300 bg-gray-100 px-4 py-3">
+                {item.answer}
+              </div>
+            )}
+          </div>
+        );
+      })}
+
+      {/* Contact Form Section */}
+      <div className="mt-8 border-t pt-6">
+        <h2 className="text-2xl font-semibold">Feel free to contact us</h2>
+        <div className="mt-4 grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div>
+            <form className="space-y-4">
+              <input
+                type="text"
+                placeholder="Your name"
+                className="w-full rounded border p-3"
+              />
+              <input
+                type="email"
+                placeholder="E-mail"
+                className="w-full rounded border p-3"
+              />
+              <textarea
+                placeholder="Message"
+                className="h-32 w-full rounded border p-3"
+              ></textarea>
+              <button
+                type="submit"
+                className="w-full rounded bg-yellow-500 py-3 text-white hover:bg-yellow-600"
+              >
+                Send
+              </button>
+            </form>
+          </div>
+          <div className="text-center md:text-left">
+            <img
+              src="/path-to-profile-image.jpg"
+              alt="Dana Chitanis"
+              className="mx-auto mb-3 h-20 w-20 rounded-full md:mx-0"
+            />
+            <p className="font-bold">DANA CHITANIS</p>
+            <p>Customer Service</p>
+            <p>(800) 123-45-67</p>
+            <p>(800) 123-45-67</p>
+            <p className="text-blue-500">mail@mail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Help;

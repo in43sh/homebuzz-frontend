@@ -1,4 +1,5 @@
 import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -63,14 +64,14 @@ const Footer = () => {
         {/* Bottom of Footer */}
         <div className="mt-8 flex flex-col items-center justify-between border-t border-gray-500 pt-4 text-sm text-gray-300 md:flex-row">
           <p className="mb-2 md:mb-0">
-            <a href="/policy" className="hover:text-primary-dark">
+            <Link to="/policy" className="hover:text-primary-dark">
               Policy statement
-            </a>{' '}
+            </Link>{' '}
             |
-            <a href="/cookies" className="hover:text-primary-dark">
+            <Link to="/cookies" className="hover:text-primary-dark">
               {' '}
               Cookie usage
-            </a>
+            </Link>
           </p>
           <p>© 2025 Copyright</p>
         </div>
