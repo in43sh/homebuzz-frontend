@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import femaleAvatar from '../assets/images/female-avatar.png';
 
 const faqData = [
   {
@@ -70,8 +71,6 @@ function Help() {
           </div>
         );
       })}
-
-      {/* Contact Form Section */}
       <div className="mt-8 border-t pt-6">
         <h2 className="text-2xl font-semibold">Feel free to contact us</h2>
         <div className="mt-4 grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -101,7 +100,7 @@ function Help() {
           </div>
           <div className="text-center md:text-left">
             <img
-              src="/path-to-profile-image.jpg"
+              src={femaleAvatar}
               alt="Dana Chitanis"
               className="mx-auto mb-3 h-20 w-20 rounded-full md:mx-0"
             />
