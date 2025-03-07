@@ -10,7 +10,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-[#353b3e] text-white shadow-md">
+    <header className="bg-gray-dark text-white shadow-md">
       <div className="container mx-auto flex items-center justify-between p-4">
         {/* Logo */}
         <a href="/" className="text-2xl font-bold">
@@ -60,7 +60,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <nav className="space-y-4 bg-[#353b3e] p-4 md:hidden">
+        <nav className="bg-gray-dark space-y-4 p-4 md:hidden">
           <a href="/" className="block hover:text-gray-300">
             Home
           </a>
