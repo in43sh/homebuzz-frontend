@@ -9,7 +9,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <div className="bg-white p-2 shadow-sm">
+    <div className="hidden bg-white p-2 shadow-sm lg:block">
       <div className="mx-auto flex max-w-full items-center justify-center space-x-4">
         {/* Links Section */}
         <nav className="flex space-x-2 overflow-auto">
